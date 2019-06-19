@@ -1,4 +1,4 @@
-var peoples = [["оксана", 15], ["василий", 21], ["сереженька", 43]]
+var peoples = [["оксана", 15], ["василий", 21], ["сереженька", 53]]
 var objPeople = []
 function otvet(array){
 	for (var i = 0; i < array.length; i++){
