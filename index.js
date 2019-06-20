@@ -11,6 +11,6 @@ function otvet(array){
 }
 
 var check = otvet(peoples);
-console.log(",j,j,", check)
+console.log("dsfdsgt", check)
 
 document.getElementById("app").innerHTML = JSON.stringify(check);
