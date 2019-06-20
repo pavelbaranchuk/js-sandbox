@@ -1,16 +1,12 @@
-var peoples = [["оксана", 15], ["василий", 21], ["сереженька", 43]]
-var objPeople = []
-function otvet(array){
-	for (var i = 0; i < array.length; i++){
- var objPerson = {}
- objPerson.name = array[i][0];
- objPerson.age = array[i][1];
- objPeople.push(objPerson)
- }
- return objPeople
+
+const url = ""
+async function getMovies('latest') { 
+  try {
+    const response = await fetch(url);  
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.log("Fetch Error :-S", err);
+    return null;
+  }
 }
-
-var check = otvet(peoples);
-console.log("check", check)
-
-document.getElementById("app").innerHTML = JSON.stringify(check);
