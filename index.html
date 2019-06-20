@@ -6,18 +6,10 @@
         <link rel="stylesheet" type="text/css" href="index.css" />
     </head>
     <body>
-        <form onsubmit="getMoviesByFilter()" class="container">
-            <div class="data">
-            <input type="text" id="txt" placeholder="Введите координаты..."/>
-            <input type="submit" value="Поиск">
-            </div>
-            <div class="result">
-                <h1><output id="output1">&nbsp;</output>
-                    <u><output id="output2"></output></u>
-                </h1>
-                
-            </div>
-        </form>
+        <div  class="container">
+						<input onclick="getMovies('latest')" type="button" value="Тест">
+						<div className="logo"></div>
+				</div>
         <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

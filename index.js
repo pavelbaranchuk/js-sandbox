@@ -1,10 +1,15 @@
+const movies = {
+	'latest': 'https://raw.githubusercontent.com/pavelbaranchuk/js-sandbox/master/API/latest.json',
+	'popular': 'https://raw.githubusercontent.com/pavelbaranchuk/js-sandbox/master/API/popular.json',
+	'upcoming': 'https://raw.githubusercontent.com/pavelbaranchuk/js-sandbox/master/API/upcoming.json'
 
-const url = ""
-async function getMovies('latest') { 
+}
+
+async function getMovies(choice) { 
   try {
-    const response = await fetch(url);  
+    const response = await fetch(movies[choice]);  
     const data = await response.json();
-    return data;
+    return console.log(data);
   } catch (err) {
     console.log("Fetch Error :-S", err);
     return null;
