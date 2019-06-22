@@ -1,17 +1,13 @@
 .container-2 {
     display: flex;
-}
-
-.container-2 div {
-    border: 1px solid gray;
-    justify-content: space-between
-}
+    height: 38% ;
+    width: 80%;
+    }
 
 .box-1 {
     background-image: url("images/filter-1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width:50%;
     flex: 1
 }
 
@@ -19,7 +15,6 @@
     background-image: url("images/filter-2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width:50%;
     flex: 1
 }
 
@@ -27,6 +22,5 @@
     background-image: url("images/filter-3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width:50%;
     flex: 1
 }
