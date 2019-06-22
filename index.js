@@ -1,11 +1,17 @@
-var peoples = [["оксана", 15], ["василий", 21], ["сереженька", 43]]
-var objPeople = []
-function otvet(array){
-	for (var i = 0; i < array.length; i++){
- var objPeeople
+const movies = {
+	'latest': 'https://raw.githubusercontent.com/pavelbaranchuk/js-sandbox/master/API/latest.json',
+	'popular': 'https://raw.githubusercontent.com/pavelbaranchuk/js-sandbox/master/API/popular.json',
+	'upcoming': 'https://raw.githubusercontent.com/pavelbaranchuk/js-sandbox/master/API/upcoming.json'
+
 }
 
-var check = otvet(peoples);
-console.log("check", check)
-
-document.getElementById("app").innerHTML = JSON.stringify(check);
+async function getMovies(choice) { 
+  try {
+    const response = await fetch(movies[choice]);  
+    const data = await response.json();
+    return console.log(data);
+  } catch (err) {
+    console.log("Fetch Error :-S", err);
+    return null;
+  }
+}
