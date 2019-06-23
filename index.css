@@ -1,34 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container-1 {
-    display: flex;
-    padding: 1%
+    padding: 1% 0% 0% 0%;
+
 }
 
 .container-2 {
     display: flex;
     justify-content: space-between;
-    padding: 1%;
-    margin: 1% 0% 0% 0%;
-    height: 38%;
-    width: 80%;
-    }
+    padding: 2% 0% 0% 0%;
+    height: 35%;
+}
 
 .box-1 {
     background-image: url("images/filter-1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    flex: 1
+    width: 31%;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .box-2 {
     background-image: url("images/filter-2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    flex: 1
+    width: 31%;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .box-3 {
     background-image: url("images/filter-3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    flex: 1
+    width: 31%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.text {
+    margin-top: 45%;
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+.box-1:hover {
+    border: 1px solid white;
+}
+
+.box-2:hover {
+    border: 1px solid white;
+}
+
+.box-3:hover {
+    border: 1px solid white;
 }
