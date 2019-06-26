@@ -13,29 +13,33 @@
         }
     </style>
     <div class="container-1">
-        <img src="images/logo.svg" height="10%">
+        <img onclick="getMovies('latest')" src="images/logo.svg" height="10%">
     </div>
     <div class="container-2">
-        <div class=box-1>
+        <div onclick="getMovies('latest')" class=box-1>
             <div class="text">
                 <h2 align="end" style="color: rgb(240, 248, 253)">Новинки 2018</h2>
             </div>
         </div>
-        <div class=box-2>
+        <div onclick="getMovies('latest')" class=box-2>
             <div class="text">
                 <h2 align="end" style="color: rgb(240, 248, 253)">Скоро в кинотеатрах</h2>
             </div>
         </div>
-        <div class=box-3>
+        <div onclick="getMovies('latest')" class=box-3>
             <div class="text">
                 <h2 align="end" style="color: rgb(240, 248, 253)">В топ-чартах</h2>
             </div>
         </div>
     </div>
     <div class="numb" style="text-align: center">
-        <input type="text" placeholder="Введите число" style="height: 7%; width: 30%; font-size: 100%;">
+        <input type="text" placeholder="Введите число" style="height: 7%; width: 30%; font-size: 175%;">
+        <button class="but" style="width: 10%; height: 7%;">Enter</button>
     </div>
     <script type="text/javascript" src="index.js"></script>
+    <div class="container-3">
+
+    </div>
 </body>
 
 </html>
