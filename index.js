@@ -14,3 +14,22 @@ async function getMovies(choice) {
     return null;
   }
 }
+window.onload = function () {
+  var val;
+  document.querySelector("#b1").addEventListener('click', function () {
+      val = document.querySelector('#i1').value;
+      alert('Значение переменной val: ' + val);
+  });
+
+  document.querySelector("#b2").addEventListener('click', function () {
+      val = "changed";
+      alert('Значение переменной val: ' + val);
+  });
+
+  document.querySelector("#b3").addEventListener('click', function () {
+      alert('Значение переменной val: ' + val);
+  });
+
+}
+
+

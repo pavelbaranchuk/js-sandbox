@@ -1,0 +1,90 @@
+body {
+    background-color: #161618;
+}
+.width{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    background-image:url('images/logo.svg');
+    background-repeat:no-repeat;
+    background-size:auto;
+    font-size: 25px;
+    height: 50px;
+    width: 240px;
+    margin: 15px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper span {
+    color: #fff;
+}
+.wrapper div {
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-size: 25px;
+    height: 200px;
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    margin: 0 15px;
+}
+.wrapper div:hover {
+    border: 2px solid #fff;
+}
+.wrapper div span {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.latest{
+    background-image:url('images/filter-1.jpg');
+}
+.popular{
+    background-image:url('images/filter-2.jpg');
+}
+.upcoming{
+    background-image:url('images/filter-3.jpg');
+}
+.quantity{
+    position: absolute; 
+    top: 350px; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.film{
+    background-color: #343549;
+    background-repeat:no-repeat;
+    background-size:auto;
+    font-size: 25px;
+    height: 30px;
+    width: 240px;
+    margin:200px 15px;
+}
+.film span{
+    color: #fff;
+    position: relative;
+    left: 50px;
+}
+.multik{
+    background-image:url('https://image.tmdb.org/t/p/w500/7WjaHQxHXuJHj33mfrCzDRRYNfc.jpg');
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 350px;
+    width: 240px;
+    box-sizing: border-box;
+    margin: -199px 15px;
+}
+.multik span{
+    color: #fff;
+    position: relative;
+    left: 110px;
+    top: 260px;
+    font-size: 60px;
+}
