@@ -1,10 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #16161A;
 }
 
 .container-1 {
     padding: 1% 0% 0% 0%;
+}
 
+.logo {
+    height: 60px;
 }
 
 .container-2 {
@@ -44,12 +48,6 @@ body {
     border: 1px solid #000000;
 }
 
-.text {
-    margin-top: 45%;
-    margin-right: 5%;
-    font-size: 18px;
-}
-
 .box-1:hover {
     border: 1px solid white;
 }
@@ -62,10 +60,34 @@ body {
     border: 1px solid white;
 }
 
-.numb {
-     margin-top: 3%;
+.text {
+    margin-top: 45%;
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+.text-1 {
+    color: white
+}
+
+.input {
+    height: 40px;
+    width: 325px;
+    font-size: 20px;
 }
 
 .but {
-    margin-top: %
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.numb {
+    margin-top: 3%;
+}
+
+.box-4 {
+    background-image: url("images/filter-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
