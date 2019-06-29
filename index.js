@@ -28,13 +28,21 @@ document.querySelector(".button").addEventListener("click", function() {
   alert("Значение переменной val: " + val);
 });
 
-function createMovies(array) {
-  array.forEach(element => {
+// function createMovies(array) {
+//   array.forEach(element => {
+
+
+
     var list = document.getElementById("list");
     var divListItem = document.createElement("div");
     
-    // Your code
-  });
-}
+    // Your code 
+    
+
+
+
+
+//   });
+// }
 
 getMovies('latest')
