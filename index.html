@@ -1,15 +1,35 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Test task</title>
-        <link rel="stylesheet" type="text/css" href="index.css" />
-    </head>
-    <body>
-        <div  class="container">
-						<input onclick="getMovies('latest')" type="button" value="Тест">
-						<div className="logo"></div>
-				</div>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Киноафиша</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body>
+    <div class="logo">
+      <img src="images/logo.svg" height="10%" />
+    </div>
+    <div class="movies">
+      <div onclick="getMovies('latest')" class="movies__box movie_1">
+        <h2 class="text">Новинки 2018</h2>
+      </div>
+      <div onclick="getMovies('upcoming')" class="movies__box movie_2">
+        <h2 class="text">Скоро в кинотеатрах</h2>
+      </div>
+      <div onclick="getMovies('popular')" class="movies__box movie_3">
+        <h2 class="text">В топ-чартах</h2>
+      </div>
+    </div>
+    <div class="numb" style="text-align: center">
+      <input type="text" placeholder="Введите число" class="textInput" />
+      <button class="button">Enter</button>
+    </div>
+    <div id="list">
+      <div class="list__item">
+        <p>Мультфильм</p>
+        <div class="list__image"><h1>4.8</h1></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
