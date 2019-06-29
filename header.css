@@ -1,0 +1,43 @@
+.logo > img {
+  height: 50px;
+  margin: 20px 0 20px 0;
+}
+
+.movies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie_1 {
+  background-image: url("images/filter-1.jpg");
+}
+
+.movie_2 {
+  background-image: url("images/filter-2.jpg");
+}
+
+.movie_3 {
+  background-image: url("images/filter-3.jpg");
+}
+
+.movies__box {
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100%;
+  width: 350px;
+  height: 200px;
+  box-shadow: 0px 0px 5px black;
+  box-shadow: inset 0 -17px 17px #000000;
+  border: 1px solid #000000;
+}
+
+.movies__box:hover {
+  border: 1px solid white;
+}
+
+.text {
+  color: rgb(240, 248, 253);
+  position: absolute;
+  top: 140px;
+  right: 20px;
+}

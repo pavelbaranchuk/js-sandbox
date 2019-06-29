@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <title>Киноафиша</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
   </head>
 
   <body>
@@ -20,14 +21,20 @@
         <h2 class="text">В топ-чартах</h2>
       </div>
     </div>
-    <div class="numb" style="text-align: center">
-      <input type="text" placeholder="Введите число" class="textInput" />
+    <div class="form" style="text-align: center">
+      <input type="text" placeholder="Введите число" />
       <button class="button">Enter</button>
     </div>
     <div id="list">
       <div class="list__item">
-        <p>Мультфильм</p>
-        <div class="list__image"><h1>4.8</h1></div>
+        <div class="poster">
+          <span class="genre">Мультфильм Static</span>
+          <img
+            src="https://image.tmdb.org/t/p/w500/927lqua6AHPW4mUflU26yV3APKZ.jpg"
+          />
+          <span class="rating">4.5</span>
+        </div>
+        <span class="title">Movie title</span>
       </div>
     </div>
     <script type="text/javascript" src="index.js"></script>
