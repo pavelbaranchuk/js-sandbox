@@ -80,9 +80,13 @@ body {
     margin-top: 3%;
 }
 
-.divListItem {
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divListItem { 
     margin-top: 20px;
-    /* background-image: url("images/filter-4.jpg"); */
     background-repeat: no-repeat;
     background-size: 100%;
     height: 370px;
