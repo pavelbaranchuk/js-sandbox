@@ -5,11 +5,14 @@ const movies = {
 
 }
 
+var moviesArray = [];
+
 async function getMovies(choice) {
   try {
     const response = await fetch(movies[choice]);
     const moviesArray = await response.json();
     console.log("MoviesArray:" + moviesArray);
+    createMovies(moviesArray);
   } catch (err) {
     console.log("Fetch Error :-S", err);
     return null;
@@ -22,9 +25,9 @@ document.querySelector(".button").addEventListener('click', function () {
   alert('Значение переменной val: ' + val);
 });
 
-function crateMovie(array) {
-
-  for (var i = 0; i < movies.latest.length; i++) {
+function createMovies(array) {
+  
+  for (var i = 0; i < array.length; i++) {
 
     var list = document.getElementById("list")
 
@@ -44,8 +47,8 @@ function crateMovie(array) {
     rating.classList.add("rating")
     rating_1.classList.add("rating_1")
 
-    imgMovie.innerHTML =
-    genre_1.innerHTML = "Фантастика"
+    imgMovie.innerHTML = ""
+    genre_1.innerHTML = "array.genre"
     rating_1.innerHTML = "2.4"
 
 
@@ -58,4 +61,6 @@ function crateMovie(array) {
   }
 }
 
-crateMovie()
+
+
+getMovies('latest')
