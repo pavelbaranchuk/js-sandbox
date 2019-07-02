@@ -19,14 +19,15 @@ async function getMovies(choice) {
 }
 
 var val;
-document.querySelector(".button").addEventListener('click', function () {
+document.querySelector(".button").addEventListener('click', function numMovies() {
   val = document.querySelector('.input').value;
-  alert('Значение переменной val: ' + val);
+  getMovies('latest');
 });
 
 function createMovies(array) {
+  alert('Выводимое количество фильмов: ' + val)
 
-  for (var i = 0; i < array.length; i++) {
+  for (var i = 0; i < val; i++) {
     var list = document.getElementById("list")
 
     var divListItem = document.createElement("div")
@@ -45,7 +46,7 @@ function createMovies(array) {
     rating.classList.add("rating")
     rating_1.classList.add("rating_1")
 
-    imgMovie.innerHTML = array[i].poster
+    imgMovie.setAttribute("src", array[i].poster)
     genre_1.innerHTML = array[i].genre
     rating_1.innerHTML = array[i].rating
 
@@ -58,7 +59,3 @@ function createMovies(array) {
     rating.appendChild(rating_1)
   }
 }
-
-
-
-getMovies('latest')
