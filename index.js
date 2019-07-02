@@ -25,13 +25,11 @@ document.querySelector(".button").addEventListener('click', function numMovies()
 });
 
 function createMovies(array) {
-  alert('Выводимое количество фильмов: ' + val)
 
   for (var i = 0; i < val; i++) {
     var list = document.getElementById("list")
 
     var divListItem = document.createElement("div")
-    var imgMovie = document.createElement("img")
     var textMovie = document.createElement("div")
     var genre = document.createElement("div")
     var genre_1 = document.createElement("h3")
@@ -39,19 +37,17 @@ function createMovies(array) {
     var rating_1 = document.createElement("h1")
 
     divListItem.classList.add("divListItem")
-    imgMovie.classList.add("imgMovie")
+
     textMovie.classList.add("textMovie")
     genre.classList.add("genre")
     genre_1.classList.add("genre_1")
     rating.classList.add("rating")
     rating_1.classList.add("rating_1")
 
-    imgMovie.setAttribute("src", array[i].poster)
     genre_1.innerHTML = array[i].genre
     rating_1.innerHTML = array[i].rating
 
     list.appendChild(divListItem)
-    divListItem.appendChild(imgMovie)
     divListItem.appendChild(textMovie)
     textMovie.appendChild(genre)
     genre.appendChild(genre_1)
