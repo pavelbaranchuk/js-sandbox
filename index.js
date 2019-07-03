@@ -30,28 +30,22 @@ function createMovies(array) {
     var list = document.getElementById("list")
 
     var divListItem = document.createElement("div")
-    var textMovie = document.createElement("div")
-    var genre = document.createElement("div")
-    var genre_1 = document.createElement("h3")
-    var rating = document.createElement("div")
-    var rating_1 = document.createElement("h1")
+    var imgMovie = document.createElement("img")
+    var genre = document.createElement("h3")
+    var rating = document.createElement("h1")
 
     divListItem.classList.add("divListItem")
-
-    textMovie.classList.add("textMovie")
+    imgMovie.classList.add("imgMovie")
     genre.classList.add("genre")
-    genre_1.classList.add("genre_1")
     rating.classList.add("rating")
-    rating_1.classList.add("rating_1")
-
-    genre_1.innerHTML = array[i].genre
-    rating_1.innerHTML = array[i].rating
 
     list.appendChild(divListItem)
-    divListItem.appendChild(textMovie)
-    textMovie.appendChild(genre)
-    genre.appendChild(genre_1)
-    textMovie.appendChild(rating)
-    rating.appendChild(rating_1)
+    divListItem.appendChild(genre)
+    divListItem.appendChild(imgMovie)
+    divListItem.appendChild(rating)
+    
+    imgMovie.setAttribute("src", array[i].poster)
+    genre.innerHTML = array[i].genre
+    rating.innerHTML = array[i].rating
   }
 }
