@@ -20,13 +20,14 @@ async function getMovies(choice) {
 
 var val;
 document.querySelector(".button").addEventListener('click', function numMovies() {
-  val = document.querySelector('.input').value;
+  val = document.querySelector('.input').value || 20;
   getMovies('latest');
-});
+}); 
 
 function createMovies(array) {
-
+console.log(val)
   for (var i = 0; i < val; i++) {
+
     var list = document.getElementById("list")
 
     var divListItem = document.createElement("div")
@@ -43,9 +44,11 @@ function createMovies(array) {
     divListItem.appendChild(genre)
     divListItem.appendChild(imgMovie)
     divListItem.appendChild(rating)
-    
+
     imgMovie.setAttribute("src", array[i].poster)
     genre.innerHTML = array[i].genre
     rating.innerHTML = array[i].rating
   }
 }
+
+createMovies("latest")
