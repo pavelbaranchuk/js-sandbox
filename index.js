@@ -9,6 +9,7 @@ var moviesArray = [];
 
 async function getMovies(choice) {
   try {
+    list.innerHTML = ''
     const response = await fetch(movies[choice]);
     const moviesArray = await response.json();
     createMovies(moviesArray);
@@ -20,12 +21,12 @@ async function getMovies(choice) {
 
 var val;
 document.querySelector(".button").addEventListener('click', function numMovies() {
-  val = document.querySelector('.input').value || 20;
+  document.querySelector('.input').value;
   getMovies('latest');
-}); 
+});
 
 function createMovies(array) {
-console.log(val)
+
   for (var i = 0; i < val; i++) {
 
     var list = document.getElementById("list")
@@ -51,4 +52,4 @@ console.log(val)
   }
 }
 
-createMovies("latest")
+getMovies("latest")
