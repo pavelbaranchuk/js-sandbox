@@ -6,10 +6,32 @@
         <link rel="stylesheet" type="text/css" href="index.css" />
     </head>
     <body>
-        <div  class="container">
-						<input onclick="getMovies('latest')" type="button" value="Тест">
-						<div className="logo"></div>
-				</div>
+      <div class= "page">
+        <div ><img class ="logo" src ="images/logo.svg"></div> 
+          <div  class="container-1">
+						<!-- <input onclick="getMovies('latest')" type="button" value="Новинки"> -->
+						<div onclick="getMovies('latest')" class = "image-1">
+              <h2 class="title1">Новинки 2019</h2>
+            </div>
+            <div onclick="getMovies('upcoming')" class = "image-2">
+              <h2 class="title1">Скоро в кинотеатрах</h2>
+            </div>
+            <div onclick="getMovies('popular')" class = "image-3">
+              <h2 class="title1">В топ-чартах</h2>
+          </div>
+        </div>
+        <div style="text-align: center"class=".container">
+          <input class="input" type="text" placeholder="Введите число"/>
+            <button class = "button" id="b1">Получить<br>значение</button>
+        </div>
+        <div style="text-align: right"class=".container">
+          <input class="input2" type="text" placeholder="Введите число"/>
+            <button class = "button2" id="b1">Получить<br>значение</button>
+        </div>
+        <div id="list">
+          </div>
+        </div>
+  </div>
         <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
